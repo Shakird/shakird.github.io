@@ -1,0 +1,105 @@
+
+body{
+  background-color: #f0d78c;
+}
+
+.container-fluid{
+    padding: 20px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+h1{
+  font-family: "Bungee Outline";
+  color: #589167;
+  font-size: 70px;
+}
+
+/* header */
+header {
+  position: relative;
+  background-color: black;
+  height: 75vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+  position: relative;
+  z-index: 2;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+@media (pointer: coarse) and (hover: none) {
+  header {
+    background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+  }
+  header video {
+    display: none;
+  }
+}
+
+p{
+  font-family: "Montserrat";
+  font-size: 16px;
+}
+
+.image-blurred-edge {
+      background-image: url(images/parking.jpg);
+      image-orientation: center;
+      width: 725px;
+      height: 435px;
+      /* you need to match the shadow color to your background or image border for the desired effect*/
+      box-shadow: 0 0 8px 8px #dcedc2 inset;
+  }
+
+/* features */
+#features {
+  padding: 7% 15%;
+  background-color: #dcedc2;
+}
+
+.feature-box{
+  text-align: center;
+  padding: 5%;
+}
+
+/* Footer */
+.footer{
+  background-color: #cf455c;
+  background-image: url"taco.jpg";
+  color: #ffff;
+  text-align: center;
+  padding: 15px 0;
+}
