@@ -16,8 +16,14 @@ body{
 
 h1{
   font-family: "Bungee Outline";
-  color: #589167;
-  font-size: 70px;
+  color: #b7e778;
+  font-size: 90px;
+}
+
+h2{
+  font-family: "Bungee Outline";
+  color: #f77754;
+  font-size: 90px;
 }
 
 /* header */
@@ -63,7 +69,7 @@ header .overlay {
 
 @media (pointer: coarse) and (hover: none) {
   header {
-    background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+    background: url('join.mp4') black no-repeat center center scroll;
   }
   header video {
     display: none;
