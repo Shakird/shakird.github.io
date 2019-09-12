@@ -90,22 +90,10 @@ p{
   padding: 5%;
 }
 
-.fa-bullseye:hover {
-  color: orange;
-}
-
-.fa-check-circle:hover {
-  color: green;
-}
-
-.fa-heart:hover {
-    color: red;
-}
-
-.icon{
+/* .icon{
   margin-bottom: 1rem;
   color: #ef8172;
-}
+} */
 
 /* carousel */
 
