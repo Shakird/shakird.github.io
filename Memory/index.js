@@ -18,15 +18,6 @@ let time = 0;
 let minutes = 0;
 let seconds = 0;
 
-
-/*
- * Display the cards on the page
- *   - shuffle the list of cards using the provided "shuffle" method below
- *   - loop through each card and create its HTML
- *   - add each card's HTML to the page
- */
-
-// Shuffle function from http://stackoverflow.com/a/2450976
 function shuffle(array) {
   let currentIndex = array.length,
     temporaryValue, randomIndex;
@@ -60,6 +51,9 @@ function resetBoard() {
 // style accordingly
 
 function cardClick() {
+  // Kick out if we click another card before the previous events could end.
+  if (clickedCards.length === 2) return;
+
   this.classList.add('show', 'open');
   clickedCards.push(event.target);
   if (clickedCards.length === 2) {
@@ -160,15 +154,15 @@ function notMatching() {
 function popUpModal() {
   popUp.innerHTML =
     `<h1 class="heading-one">Congratulations!</h1>
-	<h4 class="heading-four">Your stats</h4>
-	<p class="subhead">Moves:</p><p class="text-white">${moves}</p>
-	<p class="subhead">Time:</p><p class="text-white">${minutes}&nbsp;:&nbsp;${seconds}</p>
-	<p class="subhead">Rating:</p><p class="stars-modal text-white">${stars}</p>
-	<p class="text-white">Would you like to play again?</p>
-	<div class="restart" onclick="resetBoard()">
+    <h4 class="heading-four">Your stats</h4>
+    <p class="subhead">Moves:</p><p class="text-white">${moves}</p>
+    <p class="subhead">Time:</p><p class="text-white">${minutes}&nbsp;:&nbsp;${seconds}</p>
+    <p class="subhead">Rating:</p><p class="stars-modal text-white">${stars}</p>
+    <p class="text-white">Would you like to play again?</p>
+    <div class="restart" onclick="resetBoard()">
     <i class="fas fa-redo text-white"></i>
   </div>
-	 `;
+     `;
 }
 
 // count and display time
