@@ -1,0 +1,19 @@
+{
+  "name": "clear",
+  "version": "1.0.0",
+  "description": "CREDITS:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shakird/shakird.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Shakird/shakird.github.io/issues"
+  },
+  "homepage": "https://github.com/Shakird/shakird.github.io#readme"
+}
